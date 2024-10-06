@@ -1,0 +1,75 @@
+/* * Prifile */
+
+.profile-block {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.profile-image-block {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+.profile-image {
+  width: 100%;
+}
+
+.lang {
+  margin-top: 15px;
+  display: flex;
+}
+
+/* * Content */
+
+.profession {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contacts-block {
+  flex-direction: column;
+  margin: 20px 0 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* * Table */
+
+.table {
+  width: 100%;
+  border: 5px solid #c2d0df;
+  margin: 20px 0 20px;
+}
+
+.cell {
+  padding: 10px;
+}
+
+.headline {
+  background-color: #b7e5f0;
+}
+
+.column {
+  text-align: center;
+  background-color: #ccfffe;
+}
+
+.skills-list {
+  margin: 20px 0 20px;
+}
+
+.hobbies-text {
+  margin: 20px 0 20px;
+}
+
+.author {
+  margin-bottom: 20px;
+  text-align: center;
+}
