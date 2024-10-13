@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denis Novik</title>
+    <!-- * Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- * Styles -->
     <link rel="stylesheet" href="../assets/styles/normalize.css" />
     <link rel="stylesheet" href="../assets/styles/main.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div><a href="https://dubrovskam.github.io/beetroot-FE/">Home page</a></div>
+    <!-- <div><a href="https://dubrovskam.github.io/beetroot-FE/">Home page</a></div> -->
     <header class="header">
       <div class="wrapper">
         <nav>
@@ -40,15 +47,17 @@
           <div>
             <h2 class="about-title">About me</h2>
             <div class="about-block">
-              <p class="about-text">
-                Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in
-                design and everything connected with it.
+              <p class="about-text about-text-first">
+                Hi, I'm Denis – UX/UI designer from Minsk.
               </p>
               <p class="about-text">
+                I'm interested in design and everything connected with it.
+              </p>
+              <p class="about-text about-text-second">
                 I'm studying at courses "Web and mobile design interfaces" in
                 IT-Academy.
               </p>
-              <p class="about-text">
+              <p class="about-text about-text-third">
                 Ready to implement excellent projects with wonderful people.
               </p>
             </div>
@@ -58,15 +67,15 @@
       <section class="skills" id="skills">
         <div class="wrapper">
           <hgroup class="skills-title-block">
-            <h2>Skills</h2>
+            <h2 class="skills-title">Skills</h2>
             <div>I work in such programs as</div>
           </hgroup>
 
           <ul class="skills-list">
-            <li>
+            <li class="skills-item">
               <img src="./assets/images/ps.svg" alt="ps" class="skills-icon" />
-              <div>Adobe Photoshop</div>
-              <div>
+              <div class="skills-item-title">Adobe Photoshop</div>
+              <div class="skills-star-block">
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
@@ -80,25 +89,25 @@
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
-                  class="skills-star"
+                  class="skills-star skills-star--variant"
                 />
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
-                  class="skills-star"
+                  class="skills-star skills-star--variant"
                 />
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
-                  class="skills-star"
+                  class="skills-star skills-star--variant"
                 />
               </div>
             </li>
 
-            <li>
+            <li class="skills-item">
               <img src="./assets/images/ai.svg" alt="ai" class="skills-icon" />
-              <div>Adobe Illustrator</div>
-              <div>
+              <div class="skills-item-title">Adobe Illustrator</div>
+              <div class="skills-star-block">
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
@@ -117,20 +126,20 @@
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
-                  class="skills-star"
+                  class="skills-star skills-star--variant"
                 />
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
-                  class="skills-star"
+                  class="skills-star skills-star--variant"
                 />
               </div>
             </li>
 
-            <li>
+            <li class="skills-item">
               <img src="./assets/images/ae.svg" alt="ae" class="skills-icon" />
-              <div>Adobe After Effects</div>
-              <div>
+              <div class="skills-item-title">Adobe After Effects</div>
+              <div class="skills-star-block">
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
@@ -154,19 +163,19 @@
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
-                  class="skills-star"
+                  class="skills-star skills-star--variant"
                 />
               </div>
             </li>
 
-            <li>
+            <li class="skills-item">
               <img
                 src="./assets/images/figma.svg"
                 alt="figma"
-                class="skills-icon"
+                class="skills-icon-figma"
               />
-              <div>Figma</div>
-              <div>
+              <div class="skills-item-title skills-item-title-figma">Figma</div>
+              <div class="skills-star-block">
                 <img
                   src="./assets/images/star.svg"
                   alt="star"
@@ -199,19 +208,23 @@
       </section>
       <section id="portfolio">
         <div class="wrapper">
-          <h2>Portfolio</h2>
+          <h2 class="portfolio-title">Portfolio</h2>
           <ul>
             <li>
               <img src="./assets/images/fashion-store.jpg" alt="" />
-              <a href="#">Online fashion store - Homepage</a>
+              <a href="#" class="portfolio-link"
+                >Online fashion store - Homepage</a
+              >
             </li>
             <li>
               <img src="./assets/images/reebok.jpg" alt="" />
-              <a href="#">Reebok Store - Concept</a>
+              <a href="#" class="portfolio-link">Reebok Store - Concept</a>
             </li>
             <li>
               <img src="./assets/images/braun.jpg" alt="" />
-              <a href="#">Braun Landing Page - Concept</a>
+              <a href="#" class="portfolio-link partfolio-link-third"
+                >Braun Landing Page - Concept</a
+              >
             </li>
           </ul>
         </div>
@@ -220,12 +233,14 @@
     <footer id="contacts">
       <div class="wrapper">
         <hgroup>
-          <h2>Contacts</h2>
-          <div>Want to know more or just chat? You are welcome!</div>
+          <h2 class="footer-title">Contacts</h2>
+          <p class="footer-text">
+            Want to know more or just chat? You are welcome!
+          </p>
         </hgroup>
-        <button><span>Send message</span></button>
+        <button class="footer-button"><span>Send message</span></button>
         <div>
-          <ul>
+          <ul class="footer-list">
             <li>
               <a href="#" target="_blank" rel="nofollow noreferrer"
                 ><img
@@ -260,7 +275,10 @@
             </li>
           </ul>
         </div>
-        <div>Like me on LinkedIn, Instagram, Behance, Dribble</div>
+        <div class="footer-text-block">
+          <div>Like me on</div>
+          <div>LinkedIn, Instagram, Behance, Dribble</div>
+        </div>
       </div>
     </footer>
   </body>

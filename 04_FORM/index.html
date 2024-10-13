@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="../../index.html">Home Page</a>
+      </nav>
+    </header>
+    <!--  * Main -->
+    <main class="main">
+      <div class="form-row">
+        <form
+          class="forms"
+          method="get"
+          id="my_form"
+          onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;"
+        >
+          <label>
+            <div class="title">Повне ім'я</div>
+            <input required type="text" name="firstName" />
+            <div class="error">Fill in this field</div>
+          </label>
+
+          <label>
+            <div class="title">Емеіл</div>
+            <input required type="email" name="email" />
+            <div class="error">Fill in this field</div>
+          </label>
+          <label>
+            <div class="title">Пароль</div>
+            <input required type="password" name="password" />
+            <div class="error">Fill in this field</div>
+          </label>
+          <label>
+            <div class="title">Пароль ще раз</div>
+            <input required type="password" name="password" />
+            <div class="error">Fill in this field</div>
+          </label>
+          <label class="block-radio">
+            <div>Стать</div>
+            <label>
+              <span>Чоловіча</span>
+              <input type="radio" name="gender" value="male" />
+            </label>
+            <label>
+              <span>Жіноча</span>
+              <input type="radio" name="gender" value="female" />
+            </label>
+          </label>
+          <label>
+            <div class="title">Вік</div>
+            <input type="number" name="age" min="1" max="100" required />
+          </label>
+          <label>
+            <div class="title">Курс</div>
+            <select name="country">
+              <optgroup label="-Оберіть курс-">
+                <option selected value="front-end">Front-end</option>
+                <option value="uiUxDesign">UI/UX Design</option>
+                <option value="back-end">Back-end</option>
+                <option value="python">Python</option>
+              </optgroup>
+            </select>
+          </label>
+          <label>
+            <div class="title">Повна адреса</div>
+            <textarea required type="text" name="city"></textarea>
+            <div class="error">Fill in this field</div>
+          </label>
+          <label>
+            <input type="checkbox" name="agreement" required />
+            <span>Я погоджуюсь з обробкою персональних даних</span>
+          </label>
+          <button type="reset" class="button">
+            <span class="button-text">Очистити форму</span>
+          </button>
+          <button type="submit" class="button">
+            <span class="button-text">Зареєструватися</span>
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,12 +1,28 @@
+body {
+  font-size: 18px;
+  min-height: 100vh;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
 .header {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  height: 81px;
 }
 
 .header-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 44px;
   padding: 25px 0 25px;
   font-size: 18px;
   border-bottom: 1px solid grey;
@@ -14,6 +30,7 @@
 
 .header-link {
   color: #828282;
+  line-height: 30px;
 }
 
 .header-link:hover {
@@ -28,12 +45,12 @@
 }
 
 .about {
-  padding: 100px 0 100px;
+  padding: 104px 0 100px;
   background: #f6f6f6;
 }
 
 .about-block {
-  max-width: 580px;
+  max-width: 480px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 24px;
@@ -48,24 +65,55 @@
   margin-bottom: 50px;
 }
 
-.about-text {
+.about-text-second {
+  max-width: 406px;
+  margin: 0 auto;
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.about-text-third {
+  max-width: 321px;
+  margin: 0 auto;
 }
 
 .skills {
-  margin: 100px 0 100px;
+  margin: 105px 0 100px;
+}
+
+.skills-title {
+  font-size: 34px;
+  margin-bottom: 20px;
 }
 
 .skills-title-block {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .skills-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 95px;
+}
+
+.skills-item {
+  text-align: center;
+}
+
+.skills-item-title {
+  font-weight: 700;
+  color: #828282;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 60px;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.skills-item-title-figma {
+  padding-bottom: 80px;
 }
 
 .skills-icon {
@@ -73,10 +121,111 @@
   margin-bottom: 25px;
 }
 
+.skills-icon-figma {
+  width: 53px;
+  margin-bottom: 30px;
+}
+
+.skills-star-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .skills-star {
   width: 26px;
 }
 
+.skills-star--variant {
+  opacity: 0.3;
+}
+
+#portfolio {
+  background: #f6f6f6;
+}
+
+.portfolio-title {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 45px;
+  line-height: 46px;
+  font-size: 34px;
+}
+
+.portfolio-link {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  text-align: center;
+  max-width: 200px;
+  line-height: 24px;
+  margin: 0 auto;
+  display: block;
+  color: #070707;
+  text-decoration: underline;
+}
+
+.partfolio-link-third {
+  max-width: 300px;
+  padding-bottom: 100px;
+}
+
+.footer-title {
+  margin-top: 100px;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  max-width: 280px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 58px;
+}
+
+.footer-button {
+  height: 44px;
+  padding: 0 15px;
+  background: #070707;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  line-height: 24px;
+  border-radius: 22px;
+  display: block;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  background-color: #a4a584;
+  color: #000;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 310px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
 .footer-icon {
   width: 40px;
+}
+
+.footer-text-block {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  max-width: 200px;
+  color: #828282;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 auto;
+  text-align: center;
 }
