@@ -1,0 +1,155 @@
+/* * Body */
+
+body {
+  background-color: #3b3f45;
+  font-size: 18px;
+  min-height: 100vh;
+  color: #fcfcfc;
+  background-color: #3b3f45;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*  * Navigation  */
+
+.list-home {
+  margin: 0 auto;
+  color: #fcfcfc;
+  padding: 10px;
+  line-height: 18px;
+}
+
+/* * Heder */
+
+.header {
+  padding-bottom: 23px;
+  padding-top: 23px;
+  background-color: #4a4f56;
+  text-align: center;
+  color: #ff8984;
+  margin-bottom: 40px;
+  height: 122px;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 6px;
+}
+
+.header-text {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* * List */
+
+.list {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #88839e;
+}
+
+.list-item {
+  height: 68px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.1s ease-in;
+  line-height: 1;
+}
+
+.list-item:hover {
+  border-color: #fff;
+  background-color: #625e77;
+}
+
+.list-item:active {
+  background-color: #ff8984;
+}
+
+.list-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.list-label-title {
+  font-size: 27px;
+  line-height: 32px;
+}
+
+.list-label-notes {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.list:nth-child(2n) {
+  background-color: #7a7593;
+}
+
+input[type='checkbox'] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+input[type='checkbox'] + label {
+  position: relative;
+  padding-left: 60px;
+}
+
+input[type='checkbox'] + label::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+input[type='checkbox']:checked + label::after {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  border-left: 3px solid #000;
+  border-bottom: 3px solid #000;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 21px;
+  top: 5px;
+}
+
+.list-checkbox:checked + .list-label {
+  text-decoration: line-through;
+  color: #9b96ac;
+}
+
+/* * Button */
+
+.block {
+  margin: 40px;
+  text-align: center;
+}
+
+.block-button {
+  padding: 10px;
+  min-width: 800px;
+  height: 65px;
+  background-color: #4a4f56;
+  color: #ff8984;
+  font-size: 18px;
+  font-size: 28px;
+  line-height: 32px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.block-button:hover {
+  background-color: #2e3034;
+}
