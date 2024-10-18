@@ -1,0 +1,146 @@
+/* * Wrapper */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
+}
+
+.content--wrapper {
+  max-width: 1200px;
+}
+
+/* * Body */
+
+body {
+  font-family: var(--f-base);
+  font-size: var(--fs-base);
+  color: var(--c-white);
+  background-color: var(--c-blue);
+  border: 25px solid var(--c-steel-blue);
+  min-height: 100vh;
+  line-height: 26px;
+}
+
+/* * Home link */
+.home {
+  padding: 15px;
+}
+
+/* * Title */
+.title {
+  font-size: 21px;
+  line-height: 24px;
+  display: inline;
+}
+
+/* * Forecast block */
+.forecast-list {
+  font-size: 0;
+  margin: 35px 0;
+}
+
+.forecast-item {
+  border: 1px solid var(--c-white);
+  opacity: 1;
+  border-collapse: collapse;
+  text-align: center;
+  width: 25%;
+  padding: 25px;
+  display: inline-block;
+  transition: opacity 0.15s ease-in 0s;
+  font-size: 22px;
+}
+
+/* Hover */
+
+.forecast-list:hover .forecast-item {
+  opacity: 0.6;
+}
+
+.forecast-list .forecast-item:hover {
+  opacity: 1;
+}
+
+.forecast-text {
+  opacity: 1;
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.forecast--sky-blue {
+  width: 50%;
+  background-color: var(--c-sky-blue);
+}
+
+.forecast--turquoise {
+  background-color: var(--c-turquoise);
+}
+
+.forecast--medium-orchid {
+  background-color: var(--c-medium-orchid);
+}
+
+.forecast--indian-red {
+  background-color: var(--c-indian-red);
+}
+
+.forecast--tomato {
+  background-color: var(--c-tomato);
+}
+
+.forecast--khaki {
+  background-color: var(--c-khaki);
+}
+
+.forecast--dark-sea-green {
+  background-color: var(--c-dark-sea-green);
+}
+
+.forecast--cadet-blue {
+  background-color: var(--c-cadet-blue);
+}
+
+.forecast--pale-violet-red {
+  width: 50%;
+  background-color: var(--c-pale-violet-red);
+}
+
+.forecast--medium-sea-green {
+  background-color: var(--c-medium-sea-green);
+}
+
+.forecast--slate-blue {
+  width: 100%;
+  background-color: var(--c-slate-blue);
+}
+
+.content-text {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.forecast-content {
+  display: inline-block;
+}
+
+.forecast-title {
+  margin: 5px;
+}
+
+/* * Icons */
+.wi {
+  display: inline-block;
+  font-family: 'weathericons';
+  margin-left: 10px;
+  font-weight: 400px;
+  line-height: 60px;
+  font-size: 42px;
+}
+
+.wi-sunrise {
+  font-size: 27px;
+  line-height: 39px;
+}
