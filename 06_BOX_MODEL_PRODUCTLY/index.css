@@ -11,11 +11,8 @@ body {
 /* * Wrapper */
 
 .wrapper {
-  width: 100%;
+  width: min(calc(100% - 30px), 1230px);
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1230px;
 }
 
 /* * Header */
@@ -26,7 +23,6 @@ body {
 
 .header {
   min-height: 80px;
-  margin-bottom: 70px;
 }
 
 .header--container {
@@ -36,12 +32,6 @@ body {
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.logo {
-  width: 100%;
-  max-width: 200px;
-  height: fit-content;
 }
 
 /* Header navigation */
@@ -112,6 +102,11 @@ body {
   color: #ff9900;
   background-color: #f8f0e4;
   border-color: #ff9900;
+}
+
+/* * Main */
+.main-content {
+  padding-top: 70px;
 }
 
 /* * Section first */
