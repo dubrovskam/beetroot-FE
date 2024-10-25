@@ -79,6 +79,9 @@ a {
 .nav-item-link {
   font-family: 'Staatliches', sans-serif;
   text-decoration: none;
+  font-size: 22px;
+  line-height: 27.5px;
+  letter-spacing: 3%;
 }
 
 .logo {
