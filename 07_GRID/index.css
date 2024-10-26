@@ -2,7 +2,6 @@ body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-style: normal;
 }
 
 .wrapper {
@@ -13,6 +12,23 @@ body {
 a {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+.main {
+  margin: 120px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 /* * Titles */
@@ -26,193 +42,122 @@ a {
   color: var(--c-black);
 }
 
-/* * Section 1 */
-
-.blocks-city {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    'a b b'
-    'c c d'
-    'e f f';
-  gap: 30px;
-  max-width: 100%;
+.w-span2 {
+  grid-column: span 2;
 }
 
-.blocks-city-2 {
-  grid-area: b;
-  display: flex;
-  position: relative;
+.h-span2 {
+  grid-row: span 2;
 }
 
-.blocks-city-1 {
-  grid-area: a;
-  display: flex;
-  position: relative;
-}
-
-.blocks-city-3 {
-  grid-area: c;
-  display: flex;
-  position: relative;
-}
-
-.blocks-city-4 {
-  grid-area: d;
-  display: flex;
-  position: relative;
-}
-
-.blocks-city-5 {
-  grid-area: e;
-  display: flex;
-  position: relative;
-}
-
-.blocks-city-6 {
-  grid-area: f;
-  display: flex;
-  position: relative;
-}
-
-.image {
+.item {
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  transition: all 0.5s ease;
+}
+
+.item:hover img {
+  scale: 1.1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  top: -40px;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button-like {
+  left: -40px;
+}
+
+.button-download {
+  right: -40px;
+}
+
+.item:hover .button-like {
+  left: 20px;
+}
+
+.item:hover .button-download {
+  right: 20px;
+}
+
+.item:hover .button {
+  top: 20px;
+}
+
+.item::after,
+.item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.item::after {
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    #241f24 0%,
+    rgba(91, 91, 91, 0.45) 34%,
+    rgba(186, 185, 192, 0.26) 63%
+  );
+}
+
+.item::before {
+  height: 70px;
+  background: linear-gradient(to top, #241f24, transporent);
+  opacity: 0;
+}
+
+.item:hover::after {
+  opacity: 0;
+}
+
+.item:hover::before {
+  opacity: 1;
 }
 
 .image-content {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   position: absolute;
   bottom: 20px;
   left: 20px;
   right: 20px;
   color: var(--c-white);
-  font-size: 20px;
+  font-size: 1.25rem;
+  z-index: 2;
 }
 
 .image-content-date {
   color: var(--c-gray);
   font-family: 'Roboto', sans-serif;
-}
-
-/* * Section 2 */
-.blocks-life {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    'g h h'
-    'i i j'
-    'k k l';
-  gap: 30px;
-  max-width: 100%;
-}
-
-.blocks-life-2 {
-  grid-area: h;
-  display: flex;
-  position: relative;
-}
-
-.blocks-life-1 {
-  grid-area: g;
-  display: flex;
-  position: relative;
-}
-
-.blocks-life-3 {
-  grid-area: i;
-  display: flex;
-  position: relative;
-}
-
-.blocks-life-4 {
-  grid-area: j;
-  display: flex;
-  position: relative;
-}
-
-.blocks-life-5 {
-  grid-area: k;
-  display: flex;
-  position: relative;
-}
-
-.blocks-life-6 {
-  grid-area: l;
-  display: flex;
-  position: relative;
-}
-
-/* * Section 3 */
-.blocks-people {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    'm n o'
-    'p n q'
-    'r s q'
-    'r t t'
-    'u u v';
-  gap: 30px;
-  max-width: 100%;
-}
-
-.blocks-people-2 {
-  grid-area: n;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-1 {
-  grid-area: m;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-3 {
-  grid-area: o;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-4 {
-  grid-area: p;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-5 {
-  grid-area: q;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-6 {
-  grid-area: r;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-7 {
-  grid-area: s;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-8 {
-  grid-area: t;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-9 {
-  grid-area: u;
-  display: flex;
-  position: relative;
-}
-
-.blocks-people-10 {
-  grid-area: v;
-  display: flex;
-  position: relative;
+  font-weight: 400;
 }
