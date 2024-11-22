@@ -37,6 +37,36 @@ a {
   margin: 0 auto;
 }
 
+.main {
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+
+.main .wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.sidebar {
+  min-width: 385px;
+  position: sticky;
+  top: 80px;
+  height: 460px;
+}
+
+.sidebar li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.sidebar li:first-of-type {
+  margin-top: 0;
+}
+
+.sidebar-link {
+  text-decoration: none;
+}
+
 .chapter {
   font-size: 30px;
   font-weight: 300;
@@ -47,6 +77,16 @@ a {
 
 .italic {
   font-style: italic;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .header .wrapper {
@@ -95,6 +135,7 @@ a {
   letter-spacing: 4%;
   margin-top: 70px;
   margin-bottom: 40px;
+  font-weight: 400;
 }
 
 .background {
